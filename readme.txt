@@ -26,7 +26,7 @@ This plugin overrides some parts of WordPress AMP plugin to provide a customized
 
 == Changelog ==
 
-= 0.0.1 (2018-12-20) =
+= 0.0.2 (2018-12-20) =
 
 - Confirms the update method.
 
