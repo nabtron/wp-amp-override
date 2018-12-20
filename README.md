@@ -1,6 +1,6 @@
 # wp-amp-override
 
-This file overrides some of the settings and template pages of the official WordPress AMP plugin.
+This file overrides some of the settings and template pages of the official WordPress AMP plugin (https://wordpress.org/plugins/amp/)
 
 Such as:
 
