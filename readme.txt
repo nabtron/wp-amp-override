@@ -2,8 +2,8 @@
 Contributors: nabtron
 Tags: amp, mobile, override
 Requires at least: 5.0
-Tested up to: 5.0
-Stable tag: 0.0.2
+Tested up to: 5.0.2
+Stable tag: 0.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP: 5.3.6
@@ -25,6 +25,14 @@ This plugin overrides some parts of WordPress AMP plugin to provide a customized
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 0.0.4 (2018-12-20) =
+
+- WordPress 5.0.2 compatible.
+
+= 0.0.3 (2018-12-20) =
+
+- Bug in update mechanism.
 
 = 0.0.2 (2018-12-20) =
 

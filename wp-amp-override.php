@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WP AMP Override
  * Description: Plugin to override few settings & templates of official WordPress AMP plugin
- * Version:     0.0.2
+ * Version:     0.0.4
  * Author:      nabtron
  * Author URI:  https://nabtron.com
  * License:     Private
