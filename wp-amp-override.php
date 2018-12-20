@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: AMP Override
+ * Plugin Name: WP AMP Override
  * Description: Plugin to override few settings & templates of official WordPress AMP plugin
  * Version:     0.0.1
  * Author:      nabtron
