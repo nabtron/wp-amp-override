@@ -1,6 +1,6 @@
 # wp-amp-override
 
-This file overrides some of the settings and template pages of the official WordPress AMP plugin (https://wordpress.org/plugins/amp/)
+This file overrides some of the settings and template pages of the official WordPress AMP plugin: https://wordpress.org/plugins/amp/
 
 Such as:
 
@@ -9,3 +9,4 @@ Such as:
 3. removing google fonts calls
 4. using georgia as body font
 
+The plugin updates from this github repository from WordPress admin panel, instead of wordpress.org server, using plugin update checker: https://github.com/YahnisElsts/plugin-update-checker
