@@ -1,6 +1,6 @@
 # wp-amp-override
 
-Version: 0.0.2
+Version: 0.0.4
 
 Author: https://nabtron.com/
 
