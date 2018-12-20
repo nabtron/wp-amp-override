@@ -1,5 +1,9 @@
 # wp-amp-override
 
+Version: 0.0.2
+
+Author: https://nabtron.com/
+
 This file overrides some of the settings and template pages of the official WordPress AMP plugin: https://wordpress.org/plugins/amp/
 
 Such as:
