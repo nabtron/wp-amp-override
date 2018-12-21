@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WP AMP Override
  * Description: Plugin to override few settings & templates of official WordPress AMP plugin
- * Version:     0.0.4
+ * Version:     0.0.5
  * Author:      nabtron
  * Author URI:  https://nabtron.com
  * License:     Private
@@ -47,10 +47,23 @@ function custom_wp_cdn($html) {
 //add_filter( 'the_content', 'custom_wp_cdn' );
 
 /**
+ * Add related posts to AMP amp_post_article_footer_meta
+ */
+add_filter( 'amp_post_article_footer_meta', 'wp_amp_override_post_article_footer_meta' );
+function wp_amp_override_post_article_footer_meta( $parts ) {
+ 
+    $index = 1;
+     
+    array_splice( $parts, $index, 0, array( 'wp_amp_override-related-posts' ) );
+ 
+    return $parts;
+}
+
+/**
  * Custom templates for AMP frontend
  */
-add_filter( 'amp_post_template_file', 'custom_amp_set_custom_template', 10, 3 );
-function custom_amp_set_custom_template( $template, $template_type, $post ) {
+add_filter( 'amp_post_template_file', 'wp_amp_override_set_custom_template', 10, 3 );
+function wp_amp_override_set_custom_template( $template, $template_type, $post ) {
     if ( 'footer' === $template_type ) {
         // removed powered by wordpress
         $template = dirname( __FILE__ ) . '/templates/footer.php';
@@ -59,6 +72,9 @@ function custom_amp_set_custom_template( $template, $template_type, $post ) {
         // remove gravatar to speed up loading
 	    $template = dirname( __FILE__ ) . '/templates/meta-author.php';
 	}
+    if ( 'wp_amp_override-related-posts' === $template_type ) {
+        $template = dirname( __FILE__ ) . '/templates/related-posts.php';
+    }
   return $template;
 }
 
@@ -66,8 +82,8 @@ function custom_amp_set_custom_template( $template, $template_type, $post ) {
  * Output custom CSS to AMP frontend
  * Change the placeholder image to base64 to prevent a callback
  */
-add_action( 'amp_post_template_css', 'custom_amp_my_additional_css_styles' );
-function custom_amp_my_additional_css_styles( $amp_template ) {
+add_action( 'amp_post_template_css', 'wp_amp_override_my_additional_css_styles' );
+function wp_amp_override_my_additional_css_styles( $amp_template ) {
 	// only CSS here please...
     ?>
     .amp-wp-title {border-bottom:1px solid #ccc;}
