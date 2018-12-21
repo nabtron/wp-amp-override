@@ -98,6 +98,7 @@ function wp_amp_override_my_additional_css_styles( $amp_template ) {
 // removed gravatar
 // changed the placeholder to base64
 // removed footer credits
+// show related posts
 
 /**
  * update routine from github

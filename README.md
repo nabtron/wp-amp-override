@@ -1,6 +1,6 @@
 # wp-amp-override
 
-Version: 0.0.4
+Version: 0.0.5
 
 Author: https://nabtron.com/
 
@@ -12,5 +12,6 @@ Such as:
 2. removing gravatar image
 3. removing google fonts calls
 4. using georgia as body font
+5. show related posts
 
 The plugin updates from this github repository from WordPress admin panel, instead of wordpress.org server, using plugin update checker: https://github.com/YahnisElsts/plugin-update-checker

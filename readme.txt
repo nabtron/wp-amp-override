@@ -18,6 +18,7 @@ This plugin overrides some parts of WordPress AMP plugin to provide a customized
 - Removing **gravatar** image in author meta on single post page.
 - Removing **google fonts**, reducing calls to them.
 - Using **georgia** as body font.
+- show **related posts** on single post page.
 
 == Installation ==
 
